@@ -1,1 +1,18 @@
 
+header > .navbar{
+    background-color: #243945;
+    color: white;
+    border-radius: 20px;
+    margin: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  .nav-link:hover{
+    font-weight: bold;
+    text-decoration:underline;
+  }
+  li>.dropdown-item{
+    color: white;
+  }
+  li>.dropdown-item:hover{
+    color:black;
+  }
