@@ -16,3 +16,26 @@ header > .navbar{
   li>.dropdown-item:hover{
     color:black;
   }
+
+  .main-part{
+ 
+  
+    top: 20px;
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("https://i.pinimg.com/564x/4e/60/54/4e6054c5cfa300fcfdce524c79cba7ef.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    display: table;
+    
+  }
+  #main-title{
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    color: #243945;
+    font-size: 5vh;
+    font-family: Calibri;
+    font-weight: bold;
+  }
