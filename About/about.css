@@ -59,7 +59,15 @@
   body{
     background-color: white;
   }
-  
+  .square{
+    list-style-type: square;
+  }
+  .circle{
+    list-style-type: circle;
+  }
+  .disc{
+    list-style-type: disc;
+  }
   .card-img-top{
     border-radius: 50%;
     height: 250px ;
