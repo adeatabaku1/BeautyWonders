@@ -57,3 +57,6 @@ body{
     padding-bottom: 15px;
     margin: 0 25px;
 }
+.link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
