@@ -16,7 +16,10 @@ body {
       text-shadow:gray;
       
     }
-    
+    h6
+    {
+       background: linear-gradient(45deg,#3d7fb2, white);
+    }
       
   .text a
   {
