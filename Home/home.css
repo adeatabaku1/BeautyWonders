@@ -39,3 +39,23 @@ header > .navbar{
     font-family: Calibri;
     font-weight: bold;
   }
+
+  #statistics-of-work{
+    background-color: #e9c8c0;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  .col>h3:hover{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .col>h5:hover{
+    color: white;
+    font-weight: bold;
+  }
+  ul li > span{
+    color: #2f0c6e;
+  }
