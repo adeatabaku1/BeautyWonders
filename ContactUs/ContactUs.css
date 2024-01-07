@@ -5,13 +5,18 @@ body {
     overflow-x: hidden;
     font-size: 14px; }
   
-  .text-white {
-    color:white; 
-  }
-
-  h1, .h1 {
-    font-family: "Source Serif Pro", serif;
-  }
+ .text-white {
+      color:white !important; 
+      background: radial-gradient(circle,#3d7fb2, #1A374D);
+    }
+    p {
+      /*kerkesa text wrapping dhe shadow*/
+      word-wrap: break-word; 
+      overflow-wrap: break-word; 
+      text-shadow:gray;
+      
+    }
+      
   .text a
   {
     color:#1A374D;
