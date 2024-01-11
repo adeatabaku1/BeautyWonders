@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Grupi20">
+    <link rel="shortcut icon" href="images/logo blue 2.png" alt="Logo" width="200" height="200">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../images/logo blue 2.png" alt="Logo" width="200" height="200">
+    
+    <link rel="stylesheet" href="Barcelona.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="../menubar/menubar1.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+    <title>BeautyWonders</title>
+  
+</head>
+<body style="background-color:white;">
+  <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>Beauty Wonders.</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li ><a href="../home/home.html" class="link ">Home</a></li>
+                <li><a href="../about/about.html" class="link">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="link active" class="link nav-link dropdown-toggle link-light"  role="button" data-toggle="dropdown" aria-expanded="false" id="drop">
+                        Places
+                    </a>
+                    <ul class="dropdown-menu" style="display: none; background-color: #b0e0e6;" id="placesDropdown" >
+                      <li><a class="dropdown-item" href="../places/cappadocia.html">Cappadocia, Turkey</a></li>
+                      <li><a class="dropdown-item" href="../places/Barcelona.html">Barcelona, Spain</a></li>
+                      <li><a class="dropdown-item" href="../places/BlueEye.html">The Blue Eye, Albania</a></li>
+                      <li><a class="dropdown-item" href="../places/Italy.html">Amalfi Coast, Italy</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Contact/contact.html" class="link">Contact Us</a></li>
+               
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn white-btn" id="loginBtn" onclick="login()"><a class="link" href="../Log in/login-signup.html">Log in</a></button>
+            <button class="btn" id="registerBtn" onclick="register()"><a class="link" href="../Log in/login-signup.html">Sign up</a></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+
+    </nav>
+</div>
+
+    <header class="places">
+        <div class="content">
+            <img src="../images/balloon.jpeg" alt="balloon pic">
+            <div class="text">
+                <header class="section-title" style="color: white;"><b>Barcelona</b></header>
+                <p style="color:white"><i>BeautyWonder</i> offers special tours for Barcelona,
+                     where history dances with the wind and dreams take flight 
+                     amidst the ancient stones. 
+                     A realm where the Earth itself becomes a canvas, 
+                     painted with the vibrant hues of culture and adorned with the 
+                     whispers of centuries past. 
+                     In Cappadocia you can:
+                </p>
+                     <ul style="color: white;">
+                        <li class="circle">Embark on mesmerizing hot air balloon rides over the surreal landscapes.</li>
+                        <li class="circle">Explore the ancient cave churches of Göreme Open-Air Museum.</li>
+                        <li class="circle">Immerse yourself in the rich culture through local craft shops and markets.</li>
+                        <li class="circle">Hike or horseback ride through the breathtaking valleys and trails.</li>
+                     </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container text-center py-5">
+        <h2>Places</h2>
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+            <div class="col">
+                <div class="card">
+                  <img src="../images/Barcelona2.jpg" class="card-img-top" alt="derinkoy pic">
+                  <div class="card-body">
+                    <h5 class="card-title">Park Güell</h5>
+                    <p class="card-text">Barcelona, SPAIN</p>
+                    <h3 style="text-align: center; color: #1A374D;; font-size: 20px;">From 23.99&#36; per person</h3>
+                  </div>
+                  <div class="d-flex justify-content-evenly p-4">
+                    <ion-icon name="star" style="color:gold"></ion-icon>
+                    <ion-icon name="star" style="color:gold"></ion-icon>
+                    <ion-icon name="star" style="color:gold"></ion-icon>
+                    <ion-icon name="star" style="color:gold"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>  
+                <div>
+                    <button class="btn btn-secondary"><a class="book" target="_blank" href="https://www.getyourguide.com/-l45/?cmp=ga&cq_src=google_ads&cq_cmp=15508247026&cq_con=132158666098&cq_term=barcelona%20places%20to%20visit&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=15508247026&adgroup_id=132158666098&target_id=kwd-2645982762&loc_physical_ms=1028594&match_type=e&ad_id=628328059406&keyword=barcelona%20places%20to%20visit&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAwP6sBhDAARIsAPfK_wb_q0RMSX1xD6Xl9dimfwe0FKPm5_2yZ2_owR1CSYjXveJi33JKRfAaAvm2EALw_wcB">See more</a></button>
+                </div>
+                </div>
+              </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/Barcelona1.jpg" class="card-img-top" alt="Uchisar Castle pic">
+                <div class="card-body">
+                  <h5 class="card-title">Sagrada Familia</h5>
+                  <p class="card-text">Barcelona, SPAIN</p>
+                  <h3 style="text-align: center; color: #1A374D;; font-size: 20px;">From 47&#36; per person</h3>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <ion-icon name="star" style="color:gold"></ion-icon>
+                    <ion-icon name="star" style="color:gold"></ion-icon>
+                    <ion-icon name="star" style="color:gold"></ion-icon>
+                    <ion-icon name="star" style="color:gold"></ion-icon>
+                    <ion-icon name="star" style="color:gold"></ion-icon>
+                </div>  
+                <div>
+                    <button class="btn btn-secondary"><a class="book"target="_blank" href="https://www.getyourguide.com/-l45/?cmp=ga&cq_src=google_ads&cq_cmp=15508247026&cq_con=132158666098&cq_term=barcelona%20places%20to%20visit&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=15508247026&adgroup_id=132158666098&target_id=kwd-2645982762&loc_physical_ms=1028594&match_type=e&ad_id=628328059406&keyword=barcelona%20places%20to%20visit&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAwP6sBhDAARIsAPfK_wb_q0RMSX1xD6Xl9dimfwe0FKPm5_2yZ2_owR1CSYjXveJi33JKRfAaAvm2EALw_wcB">See more</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../images/Barcelona3.jpg" class="card-img-top" alt="gorkundere pic">
+                <div class="card-body">
+                  <h5 class="card-title">Casa Batlló</h5>
+                  <p class="card-text">Barcelona, SPAIN</p>
+                  <h3 style="text-align: center; color: #1A374D;; font-size: 20px;">From 54.99&#36; per person</h3>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                    <ion-icon name="star" style="color:gold"></ion-icon>
+                    <ion-icon name="star" style="color:gold"></ion-icon>
+                    <ion-icon name="star" style="color:gold"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+              </div>
+              <div>
+                <button class="btn btn-secondary"><a class="book" target="_blank" href="https://www.getyourguide.com/-l45/?cmp=ga&cq_src=google_ads&cq_cmp=15508247026&cq_con=132158666098&cq_term=barcelona%20places%20to%20visit&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=15508247026&adgroup_id=132158666098&target_id=kwd-2645982762&loc_physical_ms=1028594&match_type=e&ad_id=628328059406&keyword=barcelona%20places%20to%20visit&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gclid=Cj0KCQiAwP6sBhDAARIsAPfK_wb_q0RMSX1xD6Xl9dimfwe0FKPm5_2yZ2_owR1CSYjXveJi33JKRfAaAvm2EALw_wcB">See more</a></button>
+              </div>
+             </div>
+            </div>
+            
+    </div>
+    <br></br>
+    
+
+    <section class="place-promotion">
+      <div class="place-info">
+        <h2>Discover Barcelona</h2>
+        <p>Barcelona, Spain offers a magical experience like no other. From its captivating hot air balloon rides over the fairy chimneys to its ancient cave churches, immerse yourself in a land of wonder and history.</p>
+        <div>
+          <p id="par1" style="display: none;">
+            The "Blue Eye" is a water spring and natural phenomenon occurring in the village of Muzinë in Finiq municipality,
+             southern Albania. 
+            A popular tourist attraction, the clear blue water of the river can be seen from a depth of more than fifty metres.</p>
+            <input type="button" value="Discover more" name="" id="btn1" class="btn btn-outline-primary">
+            <input type="button" value="Discover less" name="" id="btn12" class="btn btn-outline-primary">
+        </div>
+      </div>
+    </section>
+
+    <br></br>
+    <br></br>
+    <br></br>
+    
