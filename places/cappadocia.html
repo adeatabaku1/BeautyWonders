@@ -18,3 +18,63 @@
     <title>BeautyWonders</title>
   
 </head>
+<body>
+  <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>Beauty Wonders.</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <ul>
+            <li ><a href="../home/home.html" class="link ">Home</a></li>
+            <li><a href="../about/about.html" class="link">About</a></li>
+            <li class="nav-item dropdown">
+                <a class="active link" class="link nav-link dropdown-toggle link-light"  role="button" data-toggle="dropdown" aria-expanded="false" id="drop">
+                    Places
+                </a>
+                <ul class="dropdown-menu" style="display: none; background-color: #b0e0e6;" id="placesDropdown" >
+                  <li><a class="dropdown-item" href="../places/cappadocia.html">Cappadocia, Turkey</a></li>
+                  <li><a class="dropdown-item" href="../places/Barcelona.html">Barcelona, Spain</a></li>
+                  <li><a class="dropdown-item" href="../places/BlueEye.html">The Blue Eye, Albania</a></li>
+                  <li><a class="dropdown-item" href="../places/Italy.html">Amalfi Coast, Italy</a></li>
+                </ul>
+            </li>
+            <li><a href="../Contact/contact.html" class="link">Contact Us</a></li>
+             
+          </ul>
+      </div>
+      <div class="nav-button">
+        <button class="btn white-btn" id="loginBtn" onclick="login()"><a class="link" href="../Log in/login-signup.html">Log in</a></button>
+        <button class="btn" id="registerBtn" onclick="register()"><a class="link" href="../Log in/login-signup.html">Sign up</a></button>
+      </div>
+      <div class="nav-menu-btn">
+          <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+      </div>
+
+    </nav>
+</div>
+<header class="places">
+        <div class="content">
+            <img src="../images/balloon.jpeg" alt="balloon pic">
+            <div class="text">
+                <header class="section-title"><b>Cappadocia</b></header>
+                <p><i>BeautyWonder</i> offers special tours for Cappadocia,
+                     where history dances with the wind and dreams take flight 
+                     amidst the ancient stones. 
+                     A realm where the Earth itself becomes a canvas, 
+                     painted with the vibrant hues of culture and adorned with the 
+                     whispers of centuries past. 
+                     In Cappadocia you can:
+                </p>
+                     <ul>
+                        <li class="circle">Embark on mesmerizing hot air balloon rides over the surreal landscapes.</li>
+                        <li class="circle">Explore the ancient cave churches of Göreme Open-Air Museum.</li>
+                        <li class="circle">Immerse yourself in the rich culture through local craft shops and markets.</li>
+                        <li class="circle">Hike or horseback ride through the breathtaking valleys and trails.</li>
+                     </ul>
+            </div>
+        </div>
+    </header>
+    
+
+</body>
