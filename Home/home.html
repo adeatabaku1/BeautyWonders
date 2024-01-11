@@ -240,4 +240,51 @@
         </div>
     </div>
 
+    <script>
+
+        $(document).ready(function(){
+    
+        // left slide button
+        $('.slider-btn-center').click(function(){
+        $('.slider-box-left').animate({left:'-100%'});
+        $('.slider-box').animate({right:'0'});
+        });
+         // left slide button mobile
+         $('.slider-btn-center-fixed').click(function(){
+        $('.slider-box-left').animate({left:'-100%'});
+        $('.slider-box').animate({right:'0'});
+        });
+        // center slide button
+        $('.slider-btn-left').click(function(){
+        $('.slider-box').animate({right:'-200%'});
+        $('.slider-box-left').animate({left:'0'});
+        });
+
+        $('.slider-btn-right').click(function(){
+        $('.slider-box').animate({left:'-200%'});
+        $('.slider-box-right').animate({right:'0'});
+        });
+
+        // moblie fixed
+        $('.slider-btn-right-fixed').click(function(){
+        $('.slider-box').animate({left:'-200%'});
+        $('.slider-box-right').animate({right:'0'});
+        });
+
+        // right slide button
+        $('.slider-btn-middle').click(function(){
+        $('.slider-box').animate({left:'0%'});
+        $('.slider-box-right').animate({right:'-100%'});
+        });
+    });
+
+    </script>
+
+    <script type="text/javascript" src="../menubar/menubar.js"></script>
+    <script src="home.js"></script>
+
+        
+</body>
+</html>
+
                  
