@@ -108,4 +108,22 @@
     cursor: pointer;
     margin-top: 100px ;
   }
+  .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  
+  }
+  .card-body{
+    margin-top: -50px;
+  
+  }
+  .bi{
+    font-size: 25px;
+  }
+  @media only screen and (max-width: 600px) {
+    .card-img-top{
+        
+      left: 48px;
+     
+  }
+  }
 
