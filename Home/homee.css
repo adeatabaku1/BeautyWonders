@@ -1,9 +1,9 @@
-
+body {
+  overflow-x: hidden;
+}
   .main-part{
- 
-  
-    top: 20px;
-    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("https://i.pinimg.com/564x/4e/60/54/4e6054c5cfa300fcfdce524c79cba7ef.jpg");
+    margin-top: 0%;
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,12 +18,21 @@
     display: table-cell;
     color: #243945;
     font-size: 5vh;
-    font-family: Calibri;
+    font-family: 'HomepageFont';
     font-weight: bold;
   }
+  #main-subtitle{
+    text-align: center;
+    vertical-align: middle;
+    display: table-row;
+    font-size: 3vh;
+    font-family: 'HomepageFont';
+  }
+
 
   #statistics-of-work{
-    background-color: #e9c8c0;
+    background-color: #1A374D;
+    color:white;
     text-align: center;
     padding-top: 18px;
     padding-bottom: 15px;
@@ -41,3 +50,70 @@
   ul li > span{
     color: #2f0c6e;
   }
+
+  @font-face {
+    font-family: 'HomepageFont';
+    src:  url('myfont.woff2') format('woff2'),
+          url('myfont.woff') format('woff');
+    font-size: 3vh;
+  }
+
+  .slider {
+    width: 100%;
+    margin: auto;
+    height: 30rem;
+    padding: 3rem;
+    color: #1A374D;
+    position: absolute;
+  }
+
+  .slider-box, .slider-box-left, .slider-box-right {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    position: absolute;
+    top: 11rem;
+  }
+
+  .slider-box-left {
+    left: -100%;
+  }
+  
+  .slider-box {
+    left: 0;
+    right: 0;
+  }
+  .slider-box-right {
+    right: -100%;
+  }
+  .slider-text {
+    width: 30%;
+    height: auto;
+    margin-right: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+    .slider-text p {
+        font-size: 3rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
