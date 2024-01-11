@@ -33,3 +33,93 @@ header > .navbar{
     color: white;
     font-weight: bold;
 }
+.top-list-title{
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+.nav-link{
+    color:white;
+}
+audio{
+    display:none;
+}
+
+.custom-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.custom-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.custom-form input,
+.custom-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.custom-form .increment-decrement {
+    display: block;
+    align-items: center;
+}
+
+.btnbtn-secondary, .custom-form button {
+    background-color: #1A374D;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.custom-form button:hover {
+    background-color: #0056b3;
+}
+
+.custom-form .quantity-input {
+    width: 40px;
+    text-align: center;
+}
+.drag-container {
+    width: 120px;
+    height: 55px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  table {
+    border-collapse: collapse;
+    cellspacing: 10px;
+    cellpadding: 10px;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  table {
+    background-color: white;
+    margin-left:7cm;
+    margin-top:2cm;
+    align-items: center;
+    width: 400px;
+    height:auto;
+
+  }
