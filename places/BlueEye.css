@@ -92,4 +92,20 @@
   .place-info btn{
     color: rgb(255, 255, 255);
   }
+  .card-img-top{
+    border-radius: 25%;
+    height: 250px ;
+    width: 300px ;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    position: relative;
+    left: 60px;
+    top: -80px;
+    object-fit: cover;
+    
+  }
+  .card{
+    border-radius: 0;
+    cursor: pointer;
+    margin-top: 100px ;
+  }
 
