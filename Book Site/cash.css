@@ -1,1 +1,35 @@
+body{
+    background-color:rgb(123, 160, 182);
+}
 
+   
+
+header > .navbar{
+    background-color: #243945;
+    color: black;
+    border-radius: 20px;
+    margin: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.nav-link:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color:white;
+}
+.container{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/login.jpg');
+    
+    
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 2.5%;
+}
+#amount-result{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.list-group-item:hover{
+    background-color: #243945;
+    color: white;
+    font-weight: bold;
+}
