@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booking Site</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="cash.css">
+    </head>
+    <body>
+      
+    <div class="container" >
+        <div class="row">
+            <div class="col-4">
+                <div class="form-container">
+                    <form id="flightForm" class="custom-form">
+                        <h3>Booking flights!</h3>
+                        <label for="from">Flying from:</label>
+                        <input type="text" id="from" name="from" placeholder="Enter departure location">
+                
+                        <label for="to">Flying to:</label>
+                        <input type="text" id="to" name="to" placeholder="Enter destination">
+                
+                        <div class="row">
+                            <label for="departureDate">Departure:</label>
+                            <input type="date" id="departureDate" name="departureDate">
+                        </div>
+                
+                        <div class="row">
+                            <label for="returnDate">Return:</label>
+                            <input type="date" id="returnDate" name="returnDate">
+                        </div>
+                
+                        <div class="row">
+                            <label for="firstClass">First class (150$):</label>
+                            <div class="increment-decrement">
+                                <button type="button" onclick="ticketHandle('firstClass',false)">-</button>
+                                <input type="text" id="firstClassInput" name="firstClass" class="quantity-input" value="0" readonly>
+                                <button type="button" onclick="ticketHandle('firstClass',true)">+</button>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <label for="economy">Economy (100$):</label>
+                            <div class="increment-decrement">
+                                <button type="button" onclick="ticketHandle('economy',false)">-</button>
+                                <input type="text" id="economyInput" name="economy" class="quantity-input" value="0" readonly>
+                                <button type="button" onclick="ticketHandle('economy',true)">+</button>
+                            </div>
+                        </div>
+                        <p>Subtotal: </p>
+                        <h5>$<span id="subTotal">0</span></h5>
+                        <p>Charge 10% VAT:</p>
+                        <h5>$<span id="tax">0</span></h5>
+                        <p>Total:</p>
+                        <h5>$<span id="total">0</span></h5>
+                
+                        <button type="submit" onclick="alert('You have booked the tickets!')" class="btn btn-primary">Book now</button>
+                    </form>
+                </div>
+                </div>
+            <div class="col-8">
+                <h4 class="top-list-title">US Dollars to Other Currency</h4>
+                <form class="form-control" action="cash.html" method="post">
+                    <legend>Cash Calculator</legend>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Write amount" id="amount-in-usd">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Select Currency:</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">Euro</option>
+                            <option value="2">Albanian Lek</option>
+                            <option value="3">Brazilian Real</option>
+                            <option value="4">Czech Koruna</option>
+                            <option value="5">Swiss Franc</option>
+                            <option value="6">Pound</option>
+                          
+                        </select>
+                    </div>
+                    <input type="button" value="Calculate" class="btnbtn-secondary" onclick="calculate()">
+                    <h3 id="amount-result">Amount in Currency: </h3>
+                    <br>
+                    <audio>
+                        <source src="money_sound_short.mp3" type="audio/mpeg">
+                    </audio>
+                </form>
+             <div class="card-drag-and-drop">
+             
+                <h2 id="Drag">Drag and Drop your CreditCard</h2>
+<audio id="dropAudio" preload="auto">
+  <source src="Cash Register (Kaching) - Sound Effect (HD).mp3" type="audio/mp3"> <!-- Replace 'your-audio-file.mp3' with the actual file path or URL -->
+  Your browser does not support the audio element.
+</audio>
+
+<table>
+  <tr>
+    <td>
+      <div id="div1" class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="../images/cc1.png" draggable="true" ondragstart="drag(event)" id="drag1">
+      </div>
+    </td>
+    <td rowspan="4">
+      <div id="div2" class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div id="div3" class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="../images/cc2.jpg" draggable="true" ondragstart="drag(event)" id="drag2">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div id="div4" class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="../images/cc3.png" draggable="true" ondragstart="drag(event)" id="drag3">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div id="div5" class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="../images/cc4.png" draggable="true" ondragstart="drag(event)" id="drag4">
+      </div>
+    </td>
+  </tr>
+</table>
+</div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        function calculate(){
+            const cashRates = [
+                { cash: "(Euro)", id: 1, rate: 0.910243},
+                { cash: "(Albanian Lek)", id: 2, rate: 94.88},
+                { cash: "(Brazilian Real)", id: 3, rate: 4.89},
+                { cash: "(Czech Koruna)", id: 4, rate: 22.38},
+                { cash: "(Swiss Franc)", id: 5, rate: 0.85},
+                { cash: "(Pound)", id: 6, rate: 0.78},
+               
+            ];
+            try{
+                document.getElementById("amount-result").style.color = "black";
+                var amount = document.getElementById("amount-in-usd").value;
+
+                var selectedCoin = document.getElementById("inputGroupSelect01").value;
+                let getRate = cashRates.filter(item => item.id == selectedCoin);
+                var rate = getRate.map(item => item.rate);
+                amount = Number.parseInt(amount);
+
+                if(isNaN(amount))
+                    throw new Error("Write numbers please!");
+                else if(amount < 0)
+                    throw new Error("Only positive numbers allowed!");
+
+                var audio = new Audio("money_sound_short.mp3");
+                audio.play();
+
+
+                function showAmount(){
+                    amount = amount * rate;
+                    document.getElementById("amount-result").innerHTML = "Amount in Cash: " + amount + " " + getRate.map(item => item.cash);
+                }
+                setTimeout(showAmount, 4100);
+            }
+            catch(error){
+                document.getElementById("amount-result").innerHTML = error;
+                document.getElementById("amount-result").style.color = "red";
+            }
+
+        }
+    </script>
+  
+    <script src="cash.js"></script>
+    </body>
+</html>
 
