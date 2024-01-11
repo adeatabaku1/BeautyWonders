@@ -161,4 +161,51 @@
       </div>
     </section>
 
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <!--GALLERY-->
+    <style>
+        .gallery-section{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .gallery-section img{
+            width: calc(33.33% - 20px); /* Calculate width for three images in a row with margins */
+            max-width: 400px; /* Limit maximum width */
+            height: auto;
+            border: 2px solid #ff3d0036;
+            border-radius: 13px;
+            box-shadow: 4px 7px 7px 0px #00000042;
+            cursor: pointer;
+            margin: 10px;
+            transition: 400ms;
+        }
+        .gallery-section img:hover{
+            filter: grayscale(1);
+            transform: scale(1.03);
+        }
+    </style>
+    <div class="gallery-section">
+      <img class="gallery" src="../images/adventure-1.jpg" alt="">
+      <img class="gallery" src="../images/adventure-2.jpg" alt="">
+      <img class="gallery" src="../images/adventure-3.jpg" alt="">
+      <img class="gallery" src="../images/vendi-1.jpg" alt="">
+      <img class="gallery" src="../images/vendi-2.jpg" alt="">
+      <img class="gallery" src="../images/vendi-3.jpg" alt="">   
+       
+    </div>
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    
+
+    
+
 </body>
