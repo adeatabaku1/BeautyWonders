@@ -313,7 +313,30 @@
     </div>
   </div>
 </footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+
+  
+    <script type="text/javascript" src="../menubar/menubar.js"></script>
+    
+<script>
+  class AirlineData {
+      constructor(airline, place) {
+        this.airline = airline;
+        this.place = place;
+      }
+    }
+
+    function shfaqTeDhenat(rreshti) {
+      var airline = rreshti.cells[0].innerText;
+      var place = rreshti.cells[1].innerText;
+
+      var data = new AirlineData(airline, place);
+
+      alert("You picked airline " + data.airline + " at " + data.place);
+    }
+</script>
 </body>
 
 </html>
