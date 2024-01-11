@@ -13,6 +13,7 @@ loginButton.addEventListener("click", (e) => {
     } else {
         loginErrorMsg.style.color = 'red';
         loginErrorMsg.style.opacity = 1;
+ 
     }
 });
 
